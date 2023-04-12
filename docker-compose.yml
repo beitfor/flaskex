@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+ flaskex:
+  build:
+   context: ./
+   dockerfile: Dockerfile
+  container_name: flaskex_1
+  ports:
+    - "5000:5000"
+  restart: unless-stopped
+
